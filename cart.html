@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart — OWN</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ticker -->
+  <div class="ticker">
+    <div class="ticker__track">
+      <span class="ticker__item"><span class="ticker__dot"></span>100% Natural Ingredients</span>
+      <span class="ticker__item"><span class="ticker__dot"></span>You Pick, We Craft</span>
+      <span class="ticker__item"><span class="ticker__dot"></span>Zero Preservatives</span>
+      <span class="ticker__item"><span class="ticker__dot"></span>Freshly Crafted, Never Off-the-Shelf</span>
+      <span class="ticker__item"><span class="ticker__dot"></span>100% Natural Ingredients</span>
+      <span class="ticker__item"><span class="ticker__dot"></span>You Pick, We Craft</span>
+      <span class="ticker__item"><span class="ticker__dot"></span>Zero Preservatives</span>
+      <span class="ticker__item"><span class="ticker__dot"></span>Freshly Crafted, Never Off-the-Shelf</span>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><img src="img/ownlogo.png" alt="OWN"></a>
+      <div class="nav__links">
+        <a href="build.html" class="nav__link">Build Your Bar</a>
+        <a href="quick-picks.html" class="nav__link">Quick Picks</a>
+        <a href="coach-picks.html" class="nav__link">Coach Picks</a>
+        <a href="kids-snacks.html" class="nav__link">Kids Snacks</a>
+        <a href="rewards.html" class="nav__link">Rewards</a>
+      </div>
+      <div class="nav__actions">
+        <a href="cart.html" class="nav__icon-btn" style="background:var(--cream-mid);border-radius:var(--radius-full);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="nav__badge">3</span>
+        </a>
+        <a href="#" class="nav__signin">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Sign In
+        </a>
+      </div>
+      <button class="nav__toggle" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="cart-page">
+      <h1 class="cart-page__title">Your Cart</h1>
+      <p class="cart-page__count">3 items in your cart</p>
+
+      <div class="cart-layout">
+
+        <!-- Cart items -->
+        <div class="cart-items">
+
+          <div class="c-item">
+            <div class="c-item__top">
+              <div>
+                <div class="c-item__type">Custom Bar</div>
+                <div class="c-item__name">Whey + Date + Dark Choc</div>
+                <div class="c-item__recipe">Whey Protein &bull; Date Base &bull; Dark Chocolate</div>
+              </div>
+              <button class="c-item__del" aria-label="Remove">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+              </button>
+            </div>
+            <div class="c-item__meta">
+              <span>&#128293; 190 cal/bar</span>
+              <span>&#128170; 10.7g protein/bar</span>
+            </div>
+            <div class="c-item__bottom">
+              <div class="c-item__qty">
+                <button class="c-item__qty-btn">&minus;</button>
+                <span class="c-item__qty-val">1</span>
+                <button class="c-item__qty-btn">+</button>
+              </div>
+              <div class="c-item__price">
+                <div class="c-item__price-main">$12.96</div>
+                <div class="c-item__price-sub">$3.24/bar &middot; 4 bars</div>
+              </div>
+            </div>
+            <label class="c-item__auto"><input type="checkbox" style="accent-color:var(--own-brown);"> Set up auto-order &mdash; reorder on a schedule</label>
+          </div>
+
+          <div class="c-item">
+            <div class="c-item__top">
+              <div>
+                <div class="c-item__type">Custom Bar</div>
+                <div class="c-item__name">Whey + Raspberry + No Coat</div>
+                <div class="c-item__recipe">Whey Protein &bull; Raspberry Base &bull; No Coating</div>
+              </div>
+              <button class="c-item__del" aria-label="Remove">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+              </button>
+            </div>
+            <div class="c-item__meta">
+              <span>&#128293; 293 cal/bar</span>
+              <span>&#128170; 18.4g protein/bar</span>
+            </div>
+            <div class="c-item__bottom">
+              <div class="c-item__qty">
+                <button class="c-item__qty-btn">&minus;</button>
+                <span class="c-item__qty-val">1</span>
+                <button class="c-item__qty-btn">+</button>
+              </div>
+              <div class="c-item__price">
+                <div class="c-item__price-main">$33.12</div>
+                <div class="c-item__price-sub">$8.28/bar &middot; 4 bars</div>
+              </div>
+            </div>
+            <label class="c-item__auto"><input type="checkbox" style="accent-color:var(--own-brown);"> Set up auto-order &mdash; reorder on a schedule</label>
+          </div>
+
+          <div class="c-item">
+            <div class="c-item__top">
+              <div>
+                <div class="c-item__type">Custom Bar</div>
+                <div class="c-item__name">Pea + Date + Dark Choc</div>
+                <div class="c-item__recipe">Pea Protein &bull; Date Base &bull; Dark Chocolate</div>
+              </div>
+              <button class="c-item__del" aria-label="Remove">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+              </button>
+            </div>
+            <div class="c-item__meta">
+              <span>&#128293; 191 cal/bar</span>
+              <span>&#128170; 10.6g protein/bar</span>
+            </div>
+            <div class="c-item__bottom">
+              <div class="c-item__qty">
+                <button class="c-item__qty-btn">&minus;</button>
+                <span class="c-item__qty-val">1</span>
+                <button class="c-item__qty-btn">+</button>
+              </div>
+              <div class="c-item__price">
+                <div class="c-item__price-main">$9.44</div>
+                <div class="c-item__price-sub">$2.36/bar &middot; 4 bars</div>
+              </div>
+            </div>
+            <label class="c-item__auto"><input type="checkbox" style="accent-color:var(--own-brown);"> Set up auto-order &mdash; reorder on a schedule</label>
+          </div>
+
+          <button class="cart-clear">Clear Cart</button>
+        </div>
+
+        <!-- Order summary -->
+        <div class="cart-sum">
+          <div class="cart-sum__title">Order Summary</div>
+
+          <div class="cart-sum__row"><span>Subtotal</span><span style="font-weight:600;">$55.52</span></div>
+          <div class="cart-sum__row cart-sum__row--green"><span>Pickup</span><span>Free</span></div>
+          <div class="cart-sum__row cart-sum__row--brown"><span>Loyalty Points</span><span>+5 pts</span></div>
+
+          <div class="cart-sum__divider"></div>
+
+          <div class="cart-sum__fulfill-label">Fulfillment</div>
+          <div class="fulfill-toggle">
+            <div class="fulfill-opt fulfill-opt--active">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Pickup
+            </div>
+            <div class="fulfill-opt">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+              Delivery
+            </div>
+          </div>
+
+          <div class="cart-sum__fulfill-label">Pickup location</div>
+          <div class="cart-sum__location">
+            <div class="cart-sum__location-name">Craft Boutik</div>
+            <div class="cart-sum__location-area">Hazmieh</div>
+          </div>
+
+          <div class="cart-sum__promo-label">Promo Code</div>
+          <div class="cart-sum__promo-row">
+            <input type="text" placeholder="ENTER CODE">
+            <button class="btn btn--secondary btn--sm">Apply</button>
+          </div>
+
+          <div class="cart-sum__divider"></div>
+
+          <div class="cart-sum__total"><span>Total</span><span>$55.52</span></div>
+
+          <div class="cart-sum__delivery">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Delivery within 24 to 48 hours
+          </div>
+
+          <button class="btn btn--primary cart-sum__checkout">Sign in to checkout</button>
+
+          <div class="cart-sum__auth">
+            New here? <a href="#">Create an account</a> or <a href="#">sign in</a> to place your order.
+          </div>
+
+          <div class="cart-sum__more">
+            <div class="cart-sum__more-title">Add more items</div>
+            <a href="build.html" class="cart-sum__more-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              Build Another Custom Bar
+            </a>
+            <a href="quick-picks.html" class="cart-sum__more-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+              Browse Quick Picks
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__logo"><img src="img/ownlogo.png" alt="OWN"></div>
+          <div class="footer__tagline">Personalization. Precision. Performance.</div>
+        </div>
+        <div class="footer__links">
+          <a href="index.html" class="footer__link">Home</a>
+          <a href="build.html" class="footer__link">Build</a>
+          <a href="quick-picks.html" class="footer__link">Quick Picks</a>
+          <a href="coach-picks.html" class="footer__link">Coach Picks</a>
+          <a href="kids-snacks.html" class="footer__link">Kids Snacks</a>
+          <a href="rewards.html" class="footer__link">Rewards</a>
+          <a href="cart.html" class="footer__link">Cart</a>
+        </div>
+        <div></div>
+      </div>
+      <div class="footer__bottom">&copy; 2025 OWN. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
