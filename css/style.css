@@ -201,7 +201,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.1; font-weight
    ======================================== */
 
 /* --- Hero --- */
-.hero { background: var(--dark-chocolate); color: var(--text-on-dark); padding: 0; min-height: calc(100vh - 152px); display: flex; flex-direction: column; overflow: hidden; position: relative; }
+.hero { background: var(--dark-chocolate); color: var(--text-on-dark); padding: 0; min-height: calc(100vh - 112px); display: flex; flex-direction: column; overflow: hidden; position: relative; }
 .hero__inner { flex: 1; display: grid; grid-template-columns: 1fr 1fr; overflow: hidden; }
 .hero__content { padding: 60px 80px 80px; display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; }
 .hero__eyebrow { font-family: var(--font-body); font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--oat-gold); margin-bottom: 28px; display: flex; align-items: center; gap: 14px; }
@@ -607,4 +607,167 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.1; font-weight
   .options-grid { grid-template-columns: 1fr; }
   .hero__actions { flex-direction: column; }
   .product-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================
+   Shop Categories — Homepage CTA Grid
+   ============================================ */
+.shop-categories {
+  padding: 80px 0;
+  background: var(--cream-light);
+}
+.shop-categories__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.shop-card {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--text-primary);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-md);
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+.shop-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+.shop-card__img {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+.shop-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s var(--ease);
+}
+.shop-card:hover .shop-card__img img {
+  transform: scale(1.06);
+}
+.shop-card__body {
+  padding: 24px;
+}
+.shop-card__title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.shop-card__desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.shop-card__cta {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--own-brown);
+  letter-spacing: 0.02em;
+}
+
+/* ============================================
+   Trust Strip
+   ============================================ */
+.trust-strip {
+  padding: 56px 0;
+  background: var(--dark-chocolate);
+  color: var(--text-on-dark);
+}
+.trust-strip__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  text-align: center;
+}
+.trust-strip__icon {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 12px;
+}
+.trust-strip__text {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.5;
+  color: var(--oat-gold);
+}
+
+/* ============================================
+   How Compact — 3 Step Strip
+   ============================================ */
+.how-compact {
+  padding: 72px 0;
+  background: var(--cream-base);
+}
+.how-compact__title {
+  font-family: var(--font-display);
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 800;
+  text-align: center;
+  color: var(--text-primary);
+  margin-bottom: 40px;
+}
+.how-compact__steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.how-compact__step {
+  text-align: center;
+  flex: 0 1 220px;
+}
+.how-compact__num {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--own-brown);
+  color: var(--cream-base);
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
+}
+.how-compact__label {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+.how-compact__meta {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+.how-compact__arrow {
+  font-size: 24px;
+  color: var(--oat-gold);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* ============================================
+   Responsive — New Sections
+   ============================================ */
+@media (max-width: 1024px) {
+  .shop-categories__grid { grid-template-columns: repeat(2, 1fr); }
+  .trust-strip__grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+}
+@media (max-width: 640px) {
+  .shop-categories__grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+  .trust-strip__grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .how-compact__steps { flex-direction: column; gap: 16px; }
+  .how-compact__arrow { transform: rotate(90deg); }
 }
