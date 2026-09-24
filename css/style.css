@@ -344,7 +344,8 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.1; font-weight
 .opt-card__img { width: 100%; aspect-ratio: 4/3; border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 10px; background: var(--cream-base); }
 .opt-card__img img { width: 100%; height: 100%; object-fit: cover; }
 .opt-card__emoji { font-size: 28px; margin-bottom: 8px; display: block; }
-.opt-card__icon { width: 28px; height: 28px; margin-bottom: 8px; display: block; color: var(--own-brown); }
+.opt-card__icon { width: 48px; height: 48px; margin-bottom: 8px; display: block; object-fit: contain; }
+.options-grid--large .opt-card__icon { width: 56px; height: 56px; margin-bottom: 10px; }
 .opt-card__name { font-family: var(--font-display); font-size: 16px; margin-bottom: 4px; letter-spacing: -0.005em; font-weight: 600; }
 .opt-card__highlight { font-size: 13px; font-weight: 600; color: var(--own-brown); margin-bottom: 2px; }
 .opt-card__sub { font-size: 11px; color: var(--text-muted); margin-bottom: 6px; }
@@ -390,7 +391,9 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.1; font-weight
 .qp-hero__title { font-size: 44px; margin-bottom: 14px; letter-spacing: -0.01em; position: relative; z-index: 2; }
 .qp-hero__title em { font-style: normal; color: var(--oat-gold); }
 .qp-hero__desc { font-size: 15px; color: var(--oat-gold); opacity: 0.75; margin-bottom: 28px; line-height: 1.7; }
-.qp-hero__sliders { display: flex; flex-direction: column; gap: 24px; position: relative; z-index: 2; }
+.qp-hero__img { position: relative; z-index: 2; border-radius: var(--radius-xl); overflow: hidden; aspect-ratio: 4/3; }
+.qp-hero__img img { width: 100%; height: 100%; object-fit: cover; }
+.qp-hero__sliders { display: flex; flex-direction: column; gap: 24px; position: relative; z-index: 2; grid-column: 1 / -1; }
 .qp-slider__header { display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 10px; color: var(--oat-gold); letter-spacing: 0.02em; }
 .qp-slider input[type="range"] { width: 100%; -webkit-appearance: none; height: 5px; background: rgba(255,255,255,0.12); border-radius: var(--radius-full); outline: none; transition: background 200ms; }
 .qp-slider input[type="range"]:hover { background: rgba(255,255,255,0.2); }
@@ -432,12 +435,15 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.1; font-weight
 /* ========================================
    KIDS SNACKS
    ======================================== */
-.kids-banner { background: linear-gradient(135deg, var(--natural-sage) 0%, var(--own-brown) 55%, var(--dark-chocolate) 100%); border-radius: var(--radius-2xl); padding: 72px; margin: 32px 0; color: var(--white); position: relative; overflow: hidden; }
+.kids-banner { background: linear-gradient(135deg, var(--natural-sage) 0%, var(--own-brown) 55%, var(--dark-chocolate) 100%); border-radius: var(--radius-2xl); padding: 72px; margin: 32px 0; color: var(--white); position: relative; overflow: hidden; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
 .kids-banner::after { content: ''; position: absolute; top: -40%; right: -15%; width: 500px; height: 500px; border-radius: 50%; background: rgba(255,255,255,0.04); }
+.kids-banner__content { position: relative; z-index: 2; }
 .kids-banner__eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 16px; }
 .kids-banner__title { font-size: clamp(38px, 4.5vw, 56px); margin-bottom: 18px; position: relative; z-index: 2; letter-spacing: -0.01em; }
 .kids-banner__desc { font-size: 16px; max-width: 480px; opacity: 0.8; line-height: 1.8; position: relative; z-index: 2; }
 .kids-banner__title em { font-style: normal; color: var(--oat-gold); }
+.kids-banner__img { position: relative; z-index: 2; border-radius: var(--radius-xl); overflow: hidden; aspect-ratio: 4/3; }
+.kids-banner__img img { width: 100%; height: 100%; object-fit: cover; }
 .kids-banner--playful { background: linear-gradient(135deg, #C8A77A 0%, var(--own-brown) 40%, var(--dark-chocolate) 100%); }
 .kids-banner__badges { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 24px; position: relative; z-index: 2; }
 .kids-badge { padding: 8px 18px; border-radius: var(--radius-full); font-size: 12px; font-weight: 600; background: rgba(255,255,255,0.15); color: var(--white); backdrop-filter: blur(8px); letter-spacing: 0.02em; }
@@ -456,12 +462,15 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.1; font-weight
 /* ========================================
    COACH PICKS
    ======================================== */
-.coach-banner { background: linear-gradient(135deg, var(--protein-burgundy) 0%, var(--dark-chocolate) 60%, #1a120e 100%); border-radius: var(--radius-2xl); padding: 72px; margin: 32px 0; color: var(--white); position: relative; overflow: hidden; }
+.coach-banner { background: linear-gradient(135deg, var(--protein-burgundy) 0%, var(--dark-chocolate) 60%, #1a120e 100%); border-radius: var(--radius-2xl); padding: 72px; margin: 32px 0; color: var(--white); position: relative; overflow: hidden; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
 .coach-banner::after { content: ''; position: absolute; top: -40%; right: -15%; width: 500px; height: 500px; border-radius: 50%; background: rgba(200,167,122,0.05); }
+.coach-banner__content { position: relative; z-index: 2; }
 .coach-banner__eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--oat-gold); margin-bottom: 16px; }
 .coach-banner__title { font-size: clamp(38px, 4.5vw, 56px); margin-bottom: 18px; position: relative; z-index: 2; letter-spacing: -0.01em; }
 .coach-banner__title em { font-style: normal; color: var(--oat-gold); }
 .coach-banner__desc { font-size: 16px; max-width: 480px; opacity: 0.8; line-height: 1.8; position: relative; z-index: 2; }
+.coach-banner__img { position: relative; z-index: 2; border-radius: var(--radius-xl); overflow: hidden; aspect-ratio: 4/3; }
+.coach-banner__img img { width: 100%; height: 100%; object-fit: cover; }
 .coach-profiles { display: flex; gap: 8px; margin-bottom: 28px; flex-wrap: wrap; }
 .coach-profile { padding: 10px 22px; border-radius: var(--radius-full); font-size: 13px; font-weight: 600; border: 1.5px solid var(--border-mid); background: var(--white); cursor: pointer; transition: all 200ms; }
 .coach-profile:hover { border-color: var(--protein-burgundy); color: var(--protein-burgundy); }
@@ -576,6 +585,12 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.1; font-weight
   .summary { position: static; }
   .wizard-steps { overflow-x: auto; justify-content: flex-start; padding: 20px 16px; -webkit-overflow-scrolling: touch; }
   .qp-hero { grid-template-columns: 1fr; }
+  .qp-hero__sliders { grid-column: auto; }
+  .qp-hero__img { aspect-ratio: 16/9; }
+  .coach-banner { grid-template-columns: 1fr; }
+  .coach-banner__img { aspect-ratio: 16/9; }
+  .kids-banner { grid-template-columns: 1fr; }
+  .kids-banner__img { aspect-ratio: 16/9; }
   .rewards-layout { grid-template-columns: 1fr; }
   .cart-layout { grid-template-columns: 1fr; }
   .footer__inner { grid-template-columns: 1fr; text-align: center; gap: 24px; }
@@ -595,7 +610,8 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.1; font-weight
   .timeline__desc { margin: 0; }
   .product-grid { grid-template-columns: 1fr 1fr; }
   .kids-preview__layout { grid-template-columns: 1fr; gap: 40px; }
-  .kids-banner { padding: 48px 28px; }
+  .kids-banner { padding: 48px 28px; grid-template-columns: 1fr; }
+  .coach-banner { padding: 48px 28px; }
   .nav__links { display: none; }
   .nav__toggle { display: flex; }
   .wizard-step__label { display: none; }
